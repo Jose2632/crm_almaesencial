@@ -18,3 +18,11 @@ Route::middleware([
 });
 
 Route::post('wathsapp', [Whatsapp::class, 'sendMessage'])->name('wathsapp');
+
+Route::get('about', function () {
+    return view('about');
+})->name('about');
+
+Route::get('testimonial', function () {
+    return view('testimonial');
+})->name('testimonial');
